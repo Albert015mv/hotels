@@ -31,16 +31,18 @@ class AuthenticatedSessionController extends Controller
     $user = auth()->user(); // Obtén el usuario autenticado
 
     // Redirige según el rol del usuario
-    if ($user->rol == 2) { // Administrador
-        return redirect('/Admin/indexA'); // Ruta de administrador
+    if ($user->rol == 2) {
+        return redirect('/adm/dashboard');
+    } elseif ($user->rol == 3) {
+        return redirect('/admHotel/dashboard');
+    } elseif ($user->rol == 1) {
+        return redirect('/dashboard');
     }
-
-    if ($user->rol == 1) { // Usuario
-        return redirect('/dashboard'); // Ruta de usuario
-    }
-
-    // Si no tiene rol válido, redirige al welcome
-    return redirect('/')->with('error', 'No tienes acceso.');
+    
+    // Rol no válido
+    Auth::logout();
+    return redirect('/')->with('error', 'Rol no válido.');
+    
 }
 
 

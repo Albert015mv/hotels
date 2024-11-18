@@ -1,4 +1,9 @@
 <x-app-layout>
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
     <!-- Imagen Principal con animación -->
     <div class="relative w-full h-[500px] overflow-hidden">
         <img src="{{ asset('imagen 1.jpg') }}" alt="Explora Teapa"

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\adminHotelsController;
 use App\Http\Controllers\HotelsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReservationController;
@@ -21,7 +22,7 @@ use Illuminate\Support\Facades\Auth;
 
 //Login
 // Rutas para usuarios (role_id == 1)
-Route::middleware(['auth', 'role:1'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard'); // Vista de usuarios
     })->name('dashboard');
@@ -29,18 +30,20 @@ Route::middleware(['auth', 'role:1'])->group(function () {
 
 
 Route::middleware('auth')->group(function () {
-    
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 // Rutas para administradores (role_id == 2)
-Route::middleware(['auth', 'role:2'])->group(function () {
-    Route::get('/Admin/indexA', function () {
-        return view('Admin.indexA'); // Vista de administradores
-    })->name('admin.indexA');
-});
+Route::get('/adm/dashboard', [AdminController::class, 'index'])
+    ->middleware('auth.admin')
+    ->name('admin.index');
+
+Route::get('/admHotel/dashboard', [adminHotelsController::class, 'index'])
+    ->middleware('auth.adminHotel')
+    ->name('adminH.index');
 Route::post('/logout', function () {
     Auth::logout();  // Cierra la sesión del usuario autenticado
     return redirect('/login');  // Redirige a la página de login
@@ -58,29 +61,29 @@ Route::get('usuarios', function () {
 //Hotels
 Route::get('/CRUD/crear', [HotelsController::class, 'crear'])->name('CRUD.crear');
 Route::post('/CRUD/store', [HotelsController::class, 'store'])->name('CRUD.store');
-Route::get('/CRUD/consultar', [HotelsController::class , 'consultar'])->name('CRUD.consultar');
-Route::put('/CRUD/{hotel}', [HotelsController::class , 'update'])->name('CRUD.update');
-Route::get('/CRUD/eliminar', [HotelsController::class , 'eliminar'])->name('CRUD.eliminar');
+Route::get('/CRUD/consultar', [HotelsController::class, 'consultar'])->name('CRUD.consultar');
+Route::put('/CRUD/{hotel}', [HotelsController::class, 'update'])->name('CRUD.update');
+Route::get('/CRUD/eliminar', [HotelsController::class, 'eliminar'])->name('CRUD.eliminar');
 Route::delete('/CRUD/{hotel}', [HotelsController::class, 'destroy'])->name('CRUD.destroy');
 
-Route::get('balnearios/index',function(){
+Route::get('balnearios/index', function () {
     return view('balnearios/index');
 });
 
-Route::get('restaurants/index',function(){
+Route::get('restaurants/index', function () {
     return view('restaurants/index');
 });
 
-Route::get('tour/index',function(){
+Route::get('tour/index', function () {
     return view('tour/index');
 });
 
 
-Route::get('AdminHotels/index',function(){
+Route::get('AdminHotels/index', function () {
     return view('AdminHotels/index');
 });
 
-Route::get('/catalogoHoteles',[HotelsController::class, 'index']);
+Route::get('/catalogoHoteles', [HotelsController::class, 'index']);
 
 // Ruta pública para la página de bienvenida
 Route::get('/', function () {
@@ -91,28 +94,15 @@ Route::get('/', function () {
 Route::get('/reservation/crearH', [ReservationController::class, 'crear'])->name('reservation.crearH');
 Route::post('/reservation/store', [ReservationController::class, 'store'])->name('reservation.store');
 Route::get('/reservations/ticket/{id}', [ReservationController::class, 'ticket'])->name('reservation.downloadTicket');
-Route::get('/reservation/consultarH', [ReservationController::class , 'consultar'])->name('reservation.consultar');
-Route::put('/reservation/{reservations}', [ReservationController::class , 'update'])->name('reservation.update');
-Route::get('/reservation/eliminar', [ReservationController::class , 'eliminar'])->name('reservation.eliminar');
+Route::get('/reservation/consultarH', [ReservationController::class, 'consultar'])->name('reservation.consultar');
+Route::put('/reservation/{reservations}', [ReservationController::class, 'update'])->name('reservation.update');
+Route::get('/reservation/eliminar', [ReservationController::class, 'eliminar'])->name('reservation.eliminar');
 Route::delete('/reservation/{reservations}', [ReservationController::class, 'destroy'])->name('reservation.destroy');
 
-
-
-Route::get('/Admin/indexA', function () {
-    return view('/Admin/indexA');
-});
 
 Route::get('/Admin/registerA', function () {
     return view('/Admin/registerA');
 });
-
-//CRUD de Users
-Route::get('/users/crearU', [usersController::class, 'Crear'])->name('users.crearU');
-Route::post('/users/store', [usersController::class, 'store'])->name('users.storeU');
-Route::get('/users/consultarU', [usersController::class , 'consultar'])->name('users.consultar');
-Route::put('/users/{use}', [usersController::class , 'update'])->name('users.updateU');
-Route::get('/users/eliminar', [usersController::class , 'eliminar'])->name('users.eliminarU');
-Route::delete('/users/{use}', [usersController::class, 'destroy'])->name('users.destroyU');
 
 
 //Route::get('register', [AdminController::class, 'showForm'])->name('register.form');

@@ -28,7 +28,11 @@
 </head>
 
 <body class="flex">
-
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
     <!-- Barra de navegación lateral -->
     <nav class="bg-gray-900 w-64 min-h-screen p-4 flex flex-col justify-between text-white">
         <div>
@@ -56,9 +60,9 @@
                         </svg>
                     </button>
                     <ul id="hoteles-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="../CRUD/crear" 
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a></li>
-                        <li><a href="{{route('CRUD.consultar')}}"
+                        <li><a href="../CRUD/crear" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a>
+                        </li>
+                        <li><a href="{{ route('CRUD.consultar') }}"
                                 class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
                     </ul>
                 </li>
@@ -74,7 +78,7 @@
                         </svg>
                     </button>
                     <ul id="admin-hotels-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                       
+
                         <li><a href="../reservation/consultarH"
                                 class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
                     </ul>
@@ -91,8 +95,8 @@
                         </svg>
                     </button>
                     <ul id="usuarios-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="../users/crearU"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a></li>
+                        <li><a href="../users/crearU" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a>
+                        </li>
                         <li><a href="../users/consultarU"
                                 class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
                     </ul>
@@ -133,13 +137,13 @@
                                 class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
                     </ul>
                 </li>
-                
+
             </ul>
         </div>
-       
 
-          <!-- Botón de Cerrar sesión -->
-          <div class="mb-6">
+
+        <!-- Botón de Cerrar sesión -->
+        <div class="mb-6">
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit">Cerrar sesión</button>
