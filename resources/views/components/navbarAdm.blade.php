@@ -14,7 +14,7 @@
     <div>
         <nav class="bg-white border-b border-gray-200 shadow">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="/Admin/indexA" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{ asset('img/logoTeapa.png') }}" class="h-8" alt="Logo de Teapa" />
                     <span class="text-xl font-semibold text-gray-800">Teapa Tabasco</span>
                 </a>

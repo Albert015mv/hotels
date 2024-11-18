@@ -55,7 +55,7 @@
             <span class="label">Hotel:</span> <span class="value">{{ $reservation->hotel->name }}</span>
         </div>
         <div class="info">
-            <span class="label">Nombre:</span> <span class="value">{{ $reservation->name }}</span>
+            <span class="label">A nombre de :</span> <span class="value">{{ $reservation->name }}</span>
         </div>
         <div class="info">
             <span class="label">Apellido Paterno:</span> <span class="value">{{ $reservation->paternal_surname }}</span>
@@ -64,16 +64,16 @@
             <span class="label">Apellido Materno:</span> <span class="value">{{ $reservation->maternal_surname }}</span>
         </div>
         <div class="info">
-            <span class="label">Fecha de Registro:</span> <span class="value">{{ $reservation->registration_date }}</span>
+            <span class="label">Registro del hotel:</span> <span class="value">{{ $reservation->registration_date }}</span>
         </div>
         <div class="info">
-            <span class="label">Número de Personas:</span> <span class="value">{{ $reservation->number_people }}</span>
+            <span class="label">Personas:</span> <span class="value">{{ $reservation->number_people }}</span>
         </div>
         <div class="info">
-            <span class="label">Número de Habitación:</span> <span class="value">{{ $reservation->room_number }}</span>
+            <span class="label">Habitación:</span> <span class="value">{{ $reservation->room_number }}</span>
         </div>
         <div class="info">
-            <span class="label">Fecha de Salida:</span> <span class="value">{{ $reservation->end_date }}</span>
+            <span class="label">Salida propuesta:</span> <span class="value">{{ $reservation->end_date }}</span>
         </div>
         <div class="footer">
             Gracias por elegir nuestro hotel. ¡Esperamos que disfrute su estancia!

@@ -14,8 +14,17 @@
                 {{ session('success') }}
             </div>
         @endif
+        
 
         <div class="overflow-x-auto shadow-2xl rounded-lg mx-auto w-full lg:w-3/4">
+            <form action="../CRUD/crear" ">
+                @csrf
+                @method('DELETE')
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition-transform duration-300 transform hover:scale-105">
+                    Agregar hotel
+                </button>
+            </form>
             <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
                 <thead class="text-white bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700">
                     <tr>

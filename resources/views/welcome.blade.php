@@ -35,11 +35,11 @@
         @if (Route::has('login'))
             <div class="fixed top-0 right-0 p-6 text-right z-10">
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="text-lg text-teal-700 hover:text-teal-900">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-lg text-teal-700 hover:text-teal-900">Inicio</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-lg text-teal-700 hover:text-teal-900">Log in</a>
+                    <a href="{{ route('login') }}" class="text-lg text-teal-700 hover:text-teal-900">Sesion</a>
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-lg text-teal-700 hover:text-teal-900">Register</a>
+                        <a href="{{ route('register') }}" class="ml-4 text-lg text-teal-700 hover:text-teal-900">Registrarse</a>
                     @endif
                 @endauth
             </div>

@@ -140,14 +140,10 @@
 
           <!-- Botón de Cerrar sesión -->
           <div class="mb-6">
-            <a href="{{ route('logout')}}" class="flex items-center p-2 rounded-lg hover:bg-red-600 text-red-500">
-                <svg class="w-6 h-6 mr-2" xmlns="" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1m0-14v1" />
-                </svg>
-                <span>Cerrar sesión</span>
-            </a>
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit">Cerrar sesión</button>
+            </form>
         </div>
     </nav>
 

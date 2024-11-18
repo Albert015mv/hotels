@@ -1,4 +1,5 @@
-<x-navbar />
+<x-app-layout>
+    @vite('resources/css/app.css')
     <!-- Imagen Principal con animación y filtro de color -->
     <div class="relative w-full h-[500px] overflow-hidden">
         <img src="{{ asset('/img/zonas.jfif') }}" alt=""
@@ -27,7 +28,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Grutas de Coconá</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>Las Grutas de Coconá son una de las maravillas naturales más importantes del estado. Ubicadas
                             en la sierra de Teapa, rodeadas de selva tropical, son ideales para los amantes de la
                             naturaleza y el ecoturismo. Las grutas presentan pasajes subterráneos, cámaras y formaciones
@@ -37,7 +38,8 @@
 
                     <!-- Mapa de ubicación -->
                     <div class="mt-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.815409881544!2d-92.93095242578626!3d17.563972997696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb9f06401a51f%3A0x9aad6884724d8025!2sGrutas%20de%20Cocon%C3%A1!5e0!3m2!1ses-419!2smx!4v1731211105034!5m2!1ses-419!2smx"
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.815409881544!2d-92.93095242578626!3d17.563972997696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb9f06401a51f%3A0x9aad6884724d8025!2sGrutas%20de%20Cocon%C3%A1!5e0!3m2!1ses-419!2smx!4v1731211105034!5m2!1ses-419!2smx"
                             width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
                     </div>
@@ -55,7 +57,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Centro de Teapa</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>La plaza central es un lugar de encuentro tanto para locales como para turistas, con espacios
                             para relajarse, jardines bien cuidados y un kiosco en el que suelen realizarse eventos
                             culturales y actividades festivas. Además, el Centro de Teapa es conocido por sus delicias
@@ -84,7 +86,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Parque Miguel Hidalgo</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>El parque cuenta con áreas verdes bien cuidadas, senderos peatonales, y varias bancas, lo que
                             lo hace ideal para paseos tranquilos y momentos de descanso. También tiene una serie de
                             árboles que proporcionan sombra, lo cual es muy apreciado en el clima cálido de la región.
@@ -112,7 +114,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Iglesia de teapa</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>ubicada en Teapa, Tabasco, es uno de los sitios más representativos del municipio. Este
                             templo, de estilo colonial, data del siglo XVIII y destaca por su arquitectura sobria y
                             detalles históricos. Su fachada es sencilla pero encantadora, con paredes blancas y una
@@ -141,7 +143,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Estacion del ferroviaria</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>La estación ferroviaria de Teapa, Tabasco, es un sitio emblemático en la historia del
                             municipio y un reflejo de la época dorada del ferrocarril en México. Construida en el siglo
                             XX, la estación fue un importante punto de conexión para el transporte de personas y
@@ -170,7 +172,7 @@
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Rio Puyacatengo</h1>
 
                     <!-- Descripción única -->
-                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <div class="leading-relaxed text-lg text-gray-700 mt-4 bg-white p-6 rounded-lg shadow-inner">
                         <p>Este río nace en la Sierra de Teapa y serpentea a través de hermosos paisajes selváticos y
                             montañosos, ofreciendo a locales y visitantes un espacio para disfrutar de la naturaleza.
                             Sus aguas cristalinas y refrescantes se prestan para actividades recreativas como nadar,
@@ -199,4 +201,5 @@
             document.getElementById(tabId).classList.remove('hidden');
         }
     </script>
+</x-app-layout>
 <x-comments />

@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usersController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,13 @@ use App\Http\Controllers\usersController;
 */
 
 //Login
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Rutas para usuarios (role_id == 1)
+Route::middleware(['auth', 'role:1'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard'); // Vista de usuarios
+    })->name('dashboard');
+});
+
 
 Route::middleware('auth')->group(function () {
     
@@ -30,7 +35,20 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Rutas para administradores (role_id == 2)
+Route::middleware(['auth', 'role:2'])->group(function () {
+    Route::get('/Admin/indexA', function () {
+        return view('Admin.indexA'); // Vista de administradores
+    })->name('admin.indexA');
+});
+Route::post('/logout', function () {
+    Auth::logout();  // Cierra la sesión del usuario autenticado
+    return redirect('/login');  // Redirige a la página de login
+})->name('logout');
+
 require __DIR__ . '/auth.php';
+
+
 
 //Rutas de las vistas
 Route::get('usuarios', function () {
@@ -64,6 +82,7 @@ Route::get('AdminHotels/index',function(){
 
 Route::get('/catalogoHoteles',[HotelsController::class, 'index']);
 
+// Ruta pública para la página de bienvenida
 Route::get('/', function () {
     return view('welcome');
 });

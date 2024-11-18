@@ -22,7 +22,7 @@
                     <label for="name" class="block text-md font-medium text-gray-700">Nombre</label>
                     <input type="text" id="name" name="name"
                         class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
-                        placeholder="Ej. Hotel Paraíso" required>
+                        placeholder="Nombre del hotel" required>
                 </div>
             </div>
 
@@ -30,10 +30,10 @@
             <div class="flex items-center">
                 <span class="text-blue-600 mr-3 text-xl"><i class="fas fa-info-circle"></i></span>
                 <div class="w-full">
-                    <label for="address" class="block text-md font-medium text-gray-700">Descripción</label>
+                    <label for="address" class="block text-md font-medium text-gray-700">Direccion</label>
                     <input type="text" id="address" name="address"
                         class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
-                        placeholder="Descripción breve del hotel" required>
+                        placeholder="Ubicacion del hotel" required>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                     <label for="phone_number" class="block text-md font-medium text-gray-700">Número de teléfono</label>
                     <input type="tel" id="phone_number" name="phone_number"
                         class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
-                        placeholder="Ej. (123) 456-7890" required>
+                        placeholder="Telefono del hotel" required>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                 <span class="text-blue-600 mr-3 text-xl"><i class="fas fa-star"></i></span>
                 <div class="w-full">
                     <label for="qualification" class="block text-md font-medium text-gray-700">Calificación</label>
-                    <input type="number" step="0.1" id="qualification" name="qualification"
+                    <input type="text" step="0.1" id="qualification" name="qualification"
                         class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
                         placeholder="Calificación del 1 al 5" required>
                 </div>

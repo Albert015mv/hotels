@@ -21,7 +21,7 @@
             <div
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="La Tiendita" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/la-tiendita.jpg">
+                    src="/img/tiendita.jpg">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">La Tiendita</h1>
@@ -64,7 +64,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ciber Café Rosales"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/ciber-cafe-rosales.jpg">
+                    src="/img/jacalito.jpeg">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Jacalito</h1>
@@ -75,7 +75,7 @@
                         y de alta calidad en un ambiente local.</p>
                     <div class="mt-4">
                         <iframe
-                            src=<if src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.153879961825!2d-92.95560112578663!3d17.54785889816431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb0b472acfb7f%3A0x2966b885a0ba2c50!2sEl%20Antiguo%20Jacalito!5e0!3m2!1ses-419!2smx!4v1731022889681!5m2!1ses-419!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.153879961825!2d-92.95560112578663!3d17.54785889816431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb0b472acfb7f%3A0x2966b885a0ba2c50!2sEl%20Antiguo%20Jacalito!5e0!3m2!1ses-419!2smx!4v1731022889681!5m2!1ses-419!2smx"
                             width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
                     </div>
@@ -94,21 +94,20 @@
                         por su ambiente vibrante y fresco, perfecto para cenas familiares o para pasar tiempo con
                         amigos.</p>
                     <div class="mt-4">
-                        <iframe
-                            src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.160021024253!2d-92.95573662578667!3d17.547566398172847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb0b4121716d9%3A0x4c11b8f7d1caf572!2sRestaurante%20La%20Mancha!5e0!3m2!1ses-419!2smx!4v1731022825075!5m2!1ses-419!2smx"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.160021024253!2d-92.95573662578664!3d17.547566398172847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb0b4121716d9%3A0x4c11b8f7d1caf572!2sRestaurante%20La%20Mancha!5e0!3m2!1ses-419!2smx!4v1731894349651!5m2!1ses-419!2smx" 
                             width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
                     </div>
                 </div>
                 <img alt="Restaurante Viole"
-                    class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-r-lg" src="/img/Viole.png">
+                    class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-r-lg" src="/img/mancha.jpg">
             </div>
 
             <div
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ciber Café Rosales"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/ciber-cafe-rosales.jpg">
+                    src="/img/pulpo.jpg">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">El Gran Pulpo</h1>
@@ -118,8 +117,7 @@
                         inspirada en temas marinos, y el ambiente es familiar y cómodo, ideal para quienes buscan
                         sabores intensos y frescos..</p>
                     <div class="mt-4">
-                        <iframe
-                            src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30432.381116777717!2d-92.98587178916014!3d17.552918400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb7c10870babb%3A0x41d3210d15147243!2sCokteler%C3%ADa%20de%20Mariscos%20El%20Gran%20Pulpo!5e0!3m2!1ses-419!2smx!4v1731022763774!5m2!1ses-419!2smx" 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30430.063047465614!2d-92.97715859396669!3d17.566710449149607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edb7c10870babb%3A0x41d3210d15147243!2sEl%20Gran%20Pulpo%20Restaurant%20Teapa!5e0!3m2!1ses-419!2smx!4v1731894293492!5m2!1ses-419!2smx" 
                             width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
                     </div>
