@@ -26,6 +26,14 @@
                 </div>
             </div>
 
+            <div class="flex items-center">
+                <span class="text-blue-600 mr-3 text-xl"><i class="fas fa-hotel"></i></span>
+                <div class="w-full">
+                    <label for="name" class="block text-md font-medium text-gray-700">Nombre</label>
+                    <input type="text" name="id_admin" >
+                </div>
+            </div>
+
             <!-- Descripción -->
             <div class="flex items-center">
                 <span class="text-blue-600 mr-3 text-xl"><i class="fas fa-info-circle"></i></span>
@@ -65,6 +73,17 @@
                 <div class="w-full">
                     <label for="qualification" class="block text-md font-medium text-gray-700">Calificación</label>
                     <input type="text" step="0.1" id="qualification" name="qualification"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
+                        placeholder="Calificación del 1 al 5" required>
+                </div>
+            </div>
+
+             <!-- Calificación -->
+             <div class="flex items-center">
+                <span class="text-blue-600 mr-3 text-xl"><i class="fas fa-star"></i></span>
+                <div class="w-full">
+                    <label for="price" class="block text-md font-medium text-gray-700">Precio</label>
+                    <input type="numeric" step="0.1" id="price" name="price"
                         class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-md"
                         placeholder="Calificación del 1 al 5" required>
                 </div>

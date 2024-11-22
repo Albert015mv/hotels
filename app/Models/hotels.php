@@ -8,11 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class hotels extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','address','number_rooms','phone_number','qualification'];
+    public function owner()
+    {
+        return $this->belongsTo(User::class, 'id_admin'); // 'admin_id' es la llave foránea que apunta al administrador
+    }
 
     public function reservations()
     {
-        return $this->hasMany(Reservations::class, 'hotel_id');
+        return $this->hasMany(Reservations::class); // Relación con las reservaciones
     }
-    
 }

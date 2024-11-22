@@ -1,4 +1,3 @@
-
 @vite('resources/css/app.css')
 <x-navbarHotel />
 <!-- Formulario de Registro -->
@@ -8,6 +7,9 @@
 
         <form method="POST" action="{{ route('reservation.store') }}">
             @csrf
+            <!-- Campo oculto para el ID del Usuario autenticado -->
+            <input type="hidden" name="user" value="{{ $user_id }}">
+
             <!-- Campo oculto para el ID del Hotel -->
             <input type="hidden" name="hotel_id" value="{{ $hotel_id }}">
 
@@ -67,22 +69,23 @@
         <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-sm">
             <h3 class="text-lg font-semibold mb-4 text-center text-green-500">Reservación Exitosa</h3>
             <p class="text-center">La reservación se ha registrado correctamente.</p>
-            
+
             <!-- Botón para descargar el ticket PDF -->
             <div class="mt-4 text-center">
-                <a href="{{ route('reservation.downloadTicket', ['id' => session('reservation_id')]) }}" 
-                   class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
-                   Descargar Ticket PDF
+                <a href="{{ route('reservation.downloadTicket', ['id' => session('reservation_id')]) }}"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+                    Descargar Ticket PDF
                 </a>
             </div>
-            
+
             <!-- Botón para volver al hotel -->
             <div class="mt-4 text-center">
-                <a href="{{ url('/catalogoHoteles') }}" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
+                <a href="{{ url('/catalogoHoteles') }}"
+                    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
                     Volver al Hotel
                 </a>
             </div>
-            
+
             <!-- Botón para cerrar el modal -->
             <div class="mt-4 text-center">
                 <button onclick="closeModal()" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-lg">
@@ -99,4 +102,3 @@
     }
 </script>
 <x-comments />
-

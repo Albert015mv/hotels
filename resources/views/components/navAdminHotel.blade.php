@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hoteles</title>
+    <title>Admin Hotel</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -14,15 +14,23 @@
     <div>
         <nav class="bg-white border-b border-gray-200 shadow">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-                <a href="/adm/dashboard" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{ asset('img/logoTeapa.png') }}" class="h-8" alt="Logo de Teapa" />
                     <span class="text-xl font-semibold text-gray-800">Teapa Tabasco</span>
                 </a>
                 <div class="hidden md:flex md:space-x-8">
-                    <a href="/adm/dashboard"
+                    <a href="/admHotel/dashboard"
                         class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Inicio</a>
+                    <a href="{{ route('hotels.add') }}" class="hover:text-blue-400">Agregar Hotel</a>
+                    <a href="{{ route('consultaHotels') }}">Hoteles</a>
+                    <a href="{{ route('reservation') }}">Reservaciones de los usuarios</a>
+                    <div class="mb-6">
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button type="submit">Cerrar sesión</button>
+                        </form>
+                    </div>
                 </div>
-
             </div>
     </div>
 

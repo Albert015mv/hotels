@@ -14,11 +14,14 @@ return new class extends Migration
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->foreignId('id_admin')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->string('address');
             $table->integer('number_rooms');
             $table->string('phone_number');
             $table->string('qualification');
+            $table->decimal('price');
             $table->timestamps();
+
         });
     }
 

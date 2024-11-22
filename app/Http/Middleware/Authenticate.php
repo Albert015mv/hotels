@@ -26,7 +26,7 @@ class Authenticate extends Middleware
         // Condicional para restringir accesos
         if (
             ($path === 'adm/dashboard' && $user->rol != 2) ||
-            ($path === 'admHotel/dashboard' && $user->rol != 3) ||
+            ($path === '/admHotel/dashboard' && $user->rol != 3) ||
             ($path === 'dashboard' && $user->rol != 1)
         ) {
             return redirect('/dashboard')->with('error', 'No tienes acceso a esta sección.');

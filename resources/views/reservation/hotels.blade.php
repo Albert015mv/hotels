@@ -20,12 +20,12 @@
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase text-center">Teapa, Tabasco
                     </h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4 text-center">{{ $hotel->name }}</h1>
-                    <p class="leading-relaxed text-lg text-gray-700 mb-2"><strong>Descripción:</strong>
+                    <p class="leading-relaxed text-lg text-gray-700 mb-2"><strong>Direccion:</strong>
                         {{ $hotel->address }}</p>
-                    <p class="text-gray-700 mb-2"><strong>Número de habitaciones:</strong> {{ $hotel->number_rooms }}
-                    </p>
+                    <p class="text-gray-700 mb-2"><strong>Número de habitaciones:</strong> {{ $hotel->number_rooms }}</p>
                     <p class="text-gray-700 mb-2"><strong>Número de teléfono:</strong> {{ $hotel->phone_number }}</p>
                     <p class="text-gray-700 mb-4"><strong>Calificación:</strong> {{ $hotel->qualification }}</p>
+                    <p class="text-gray-700 mb-4"><strong>Precio por mes:</strong> ${{ $hotel->price }}</p>
                 </div>
                 <!-- Botón para abrir el modal de registro -->
                 <a href="{{ route('reservation.crearH', ['hotel_id' => $hotel->id]) }}"

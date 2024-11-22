@@ -52,28 +52,23 @@
     <div class="ticket">
         <h2>Ticket de Reserva</h2>
         <div class="info">
-            <span class="label">Hotel:</span> <span class="value">{{ $reservation->hotel->name }}</span>
+            <span class="label">Usted reservo en el</span> <span class="value">{{ $reservation->hotel->name }}</span>
         </div>
         <div class="info">
-            <span class="label">A nombre de :</span> <span class="value">{{ $reservation->name }}</span>
+            <span class="label">A nombre de</span> <span class="value">{{ $reservation->name}} {{ $reservation->paternal_surname }} {{ $reservation->maternal_surname }}</span>
+        </div>
+        
+        <div class="info">
+            <span class="label">Registrado para el dia </span> <span class="value">{{ $reservation->registration_date }}</span>
         </div>
         <div class="info">
-            <span class="label">Apellido Paterno:</span> <span class="value">{{ $reservation->paternal_surname }}</span>
+            <span class="label">Para</span> <span class="value">{{ $reservation->number_people }} personas</span>
         </div>
         <div class="info">
-            <span class="label">Apellido Materno:</span> <span class="value">{{ $reservation->maternal_surname }}</span>
+            <span class="label">La habitacion No.</span> <span class="value">{{ $reservation->room_number }}</span>
         </div>
         <div class="info">
-            <span class="label">Registro del hotel:</span> <span class="value">{{ $reservation->registration_date }}</span>
-        </div>
-        <div class="info">
-            <span class="label">Personas:</span> <span class="value">{{ $reservation->number_people }}</span>
-        </div>
-        <div class="info">
-            <span class="label">Habitación:</span> <span class="value">{{ $reservation->room_number }}</span>
-        </div>
-        <div class="info">
-            <span class="label">Salida propuesta:</span> <span class="value">{{ $reservation->end_date }}</span>
+            <span class="label">Su salida sera el</span> <span class="value">{{ $reservation->end_date }}</span>
         </div>
         <div class="footer">
             Gracias por elegir nuestro hotel. ¡Esperamos que disfrute su estancia!

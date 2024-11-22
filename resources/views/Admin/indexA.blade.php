@@ -48,42 +48,6 @@
 
             <!-- Menú de navegación -->
             <ul class="flex flex-col space-y-4">
-
-                <!-- Menú Hoteles -->
-                <li>
-                    <button onclick="toggleMenu('hoteles-menu')"
-                        class="flex items-center p-2 w-full rounded-lg hover:bg-gray-700 focus:outline-none">
-                        <span>Hoteles</span>
-                        <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <ul id="hoteles-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="../CRUD/crear" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a>
-                        </li>
-                        <li><a href="{{ route('CRUD.consultar') }}"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
-                    </ul>
-                </li>
-
-                <!-- Menú Reservaciones -->
-                <li>
-                    <button onclick="toggleMenu('admin-hotels-menu')"
-                        class="flex items-center p-2 w-full rounded-lg hover:bg-gray-700 focus:outline-none">
-                        <span>Reservaciones</span>
-                        <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <ul id="admin-hotels-menu" class="ml-6 max-height-0 transition-height space-y-2">
-
-                        <li><a href="../reservation/consultarH"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
-                    </ul>
-                </li>
-
                 <!-- Menú Usuarios -->
                 <li>
                     <button onclick="toggleMenu('usuarios-menu')"
@@ -95,49 +59,10 @@
                         </svg>
                     </button>
                     <ul id="usuarios-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="../users/crearU" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a>
+                        <li><a href="/ConsultaAdmin" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ver los usuarios</a>
                         </li>
-                        <li><a href="../users/consultarU"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
                     </ul>
                 </li>
-
-                <!-- Menú Usuarios -->
-                <li>
-                    <button onclick="toggleMenu('administrador-menu')"
-                        class="flex items-center p-2 w-full rounded-lg hover:bg-gray-700 focus:outline-none">
-                        <span>Administrador</span>
-                        <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <ul id="administrador-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="../Admin/registerA"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a></li>
-                        <li><a href="#consultar-administrador"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
-                    </ul>
-                </li>
-
-                <!-- Menú Usuarios -->
-                <li>
-                    <button onclick="toggleMenu('admin-hotels-menu')"
-                        class="flex items-center p-2 w-full rounded-lg hover:bg-gray-700 focus:outline-none">
-                        <span>Administrador de Hoteles</span>
-                        <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <ul id="admin-hotels-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="#ingresar-admin-hotels"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ingresar</a></li>
-                        <li><a href="#consultar-admin-hotels"
-                                class="block py-2 px-3 rounded-lg hover:bg-gray-700">Consultar</a></li>
-                    </ul>
-                </li>
-
             </ul>
         </div>
 

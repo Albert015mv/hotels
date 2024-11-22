@@ -48,4 +48,8 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Rol::class, 'rol', 'id');
     }
+    public function hotels()
+    {
+        return $this->hasMany(hotels::class, 'id_admin'); // Un administrador puede tener muchos hoteles
+    }
 }

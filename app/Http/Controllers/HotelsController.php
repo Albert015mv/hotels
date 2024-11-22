@@ -60,19 +60,23 @@ class HotelsController extends Controller
         // Validación de los datos de entrada
         $request->validate([
             'name' => 'required|string',
+            'id_admin' => 'required|string',
             'address' => 'required|string',
             'number_rooms' => 'required|integer',
             'phone_number' => 'required|string',
             'qualification' => 'required|string',
+            'price' => 'required|string',
         ]);
 
         // Crear una nueva instancia de Hotel
         $hotel = new Hotels();
         $hotel->name = $request->name;
+        $hotel->id_admin = $request->id_admin;
         $hotel->address = $request->address;
         $hotel->number_rooms = $request->number_rooms;
         $hotel->phone_number = $request->phone_number;
         $hotel->qualification = $request->qualification;
+        $hotel->price = $request->price;
 
         // Guardar el nuevo hotel en la base de datos
         $hotel->save();

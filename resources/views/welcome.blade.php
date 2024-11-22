@@ -51,7 +51,6 @@
                 <div class="lg:w-1/2 text-center lg:text-left">
                     <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">Descubre el encanto de Teapa</h1>
                     <p class="text-lg text-white mb-8">Explora la belleza y tradición de nuestro pueblo mágico con una plataforma fácil de usar.</p>
-                    <a href="#" class="bg-pink-500 hover:bg-indigo-500 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">Comenzar</a>
                 </div>
                 <div class="lg:w-1/2">
                     <img src="{{ asset('zona.png') }}" alt="Imagen de Teapa" class="rounded-lg shadow-lg hover:scale-105 transition-all duration-300">

@@ -5,21 +5,27 @@ namespace App\Http\Controllers;
 use App\Models\Reservations;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
+
 class ReservationController extends Controller
 {
     // Método para mostrar el formulario de creación
     public function crear(Request $request)
     {
+
         $hotel_id = $request->input('hotel_id'); // Obtén el hotel_id desde la solicitud
-        return view('reservation.crearH', compact('hotel_id')); // Pasa el hotel_id a la vista
+        $user_id = Auth::id(); // Obtén el ID del usuario autenticado
+
+        return view('reservation.crearH', compact('hotel_id', 'user_id'));  // Pasa el hotel_id a la vista
     }
 
     // Método para almacenar la reserva en la base de datos
     public function store(Request $request)
     {
         $request->validate([
+            'user' => 'required|integer',
             'hotel_id' => 'required|integer',
             'name' => 'required|string|max:255',
             'paternal_surname' => 'required|string|max:255',
@@ -30,8 +36,9 @@ class ReservationController extends Controller
             'end_date' => 'required|date',
         ]);
 
-        // Crear y guardar la reserva
+        // Guardar la reservación en la base de datos
         $reservation = new Reservations();
+        $reservation->user = $request->user; // Asignar el ID del usuario autenticado
         $reservation->hotel_id = $request->hotel_id;
         $reservation->name = $request->name;
         $reservation->paternal_surname = $request->paternal_surname;
@@ -40,6 +47,7 @@ class ReservationController extends Controller
         $reservation->number_people = $request->number_people;
         $reservation->room_number = $request->room_number;
         $reservation->end_date = $request->end_date;
+
         $reservation->save();
 
         // Guarda el ID de la reserva en la sesión para mostrar el modal de éxito y proporcionar el ID para el ticket
@@ -102,5 +110,12 @@ class ReservationController extends Controller
         $reservations = Reservations::all(); // Cambia $Reservations a $reservations para ser consistente
         return view('reservation/consultarH', compact('reservations'));
     }
+    public function index()
+    {
+        // Obtener todas las reservaciones de la base de datos
+        $reservations = Reservations::all();
 
+        // Retornar la vista con los datos de las reservaciones
+        return view('AdminHotels.reservation', compact('reservations'));
+    }
 }
