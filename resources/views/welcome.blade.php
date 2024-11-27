@@ -61,33 +61,33 @@
         <!-- Sección de artesanías -->
         <section class="py-16 bg-white">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-12 text-indigo-600">Nuestras Artesanías</h2>
+                <h2 class="text-3xl font-semibold mb-12 text-indigo-600">Fiestas populares</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Sombrero de Palma -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-lg grupo hover-zoom">
                         <img class="w-32 h-32 mb-4 rounded-lg mx-auto" src="{{ asset('img/palma.jpg') }}" alt="Sombrero de Palma">
-                        <p class="uppercase font-bold text-indigo-800">Sombrero de Palma</p>
+                        <p class="uppercase font-bold text-indigo-800">Feria municipal</p>
                         <div class="concepto bg-opacity-0 text-white text-sm p-2">Hecho con palma natural de la región.</div>
                     </div>
 
                     <!-- Cerámica -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-lg grupo hover-zoom">
                         <img class="w-32 h-32 mb-4 rounded-lg mx-auto" src="{{ asset('img/artesania.jpeg') }}" alt="Cerámica">
-                        <p class="uppercase font-bold text-indigo-800">Cerámica</p>
+                        <p class="uppercase font-bold text-indigo-800">Fiesta de ferrocarrilero</p>
                         <div class="concepto bg-opacity-0 text-white text-sm p-2">Piezas artesanales de cerámica fina.</div>
                     </div>
 
                     <!-- Textiles -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-lg grupo hover-zoom">
                         <img class="w-32 h-32 mb-4 rounded-lg mx-auto" src="{{ asset('img/textiles.jpg') }}" alt="Textiles">
-                        <p class="uppercase font-bold text-indigo-800">Textiles</p>
+                        <p class="uppercase font-bold text-indigo-800">Carnaval Teapaneco</p>
                         <div class="concepto bg-opacity-0 text-white text-sm p-2">Tejidos con técnicas tradicionales.</div>
                     </div>
 
                     <!-- Cestos -->
                     <div class="bg-gray-50 p-6 rounded-lg shadow-lg grupo hover-zoom">
                         <img class="w-32 h-32 mb-4 rounded-lg mx-auto" src="{{ asset('img/cestos.jfif') }}" alt="Cestos">
-                        <p class="uppercase font-bold text-indigo-800">Cestos</p>
+                        <p class="uppercase font-bold text-indigo-800">Fiesta de santiago apostol</p>
                         <div class="concepto bg-opacity-0 text-white text-sm p-2">Cestas tejidas a mano.</div>
                     </div>
                 </div>
