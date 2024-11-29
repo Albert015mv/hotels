@@ -59,7 +59,7 @@ Route::middleware('auth')->group(function () {
 // Rutas para administradores
 Route::middleware('auth.admin')->group(function () {
     Route::get('/adm/dashboard', [AdminController::class, 'index'])->name('admin.index');
-    Route::get('ConsultaAdmin', [AdminController::class, 'admin'])->name('Consulta.adm');
+    Route::get('/ConsultaAdmin', [AdminController::class, 'admin'])->name('Consulta.adm');
     Route::get('/users/create', [AdminController::class, 'create'])->name('user.create');
     Route::post('/users/store', [AdminController::class, 'store'])->name('user.store');
     Route::delete('/users/destroy/{id}', [AdminController::class, 'destroy'])->name('user.destroy');

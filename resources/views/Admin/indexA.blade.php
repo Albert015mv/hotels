@@ -59,7 +59,7 @@
                         </svg>
                     </button>
                     <ul id="usuarios-menu" class="ml-6 max-height-0 transition-height space-y-2">
-                        <li><a href="ConsultaAdmin" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ver los usuarios</a>
+                        <li><a href="{{route('Consulta.adm')}}" class="block py-2 px-3 rounded-lg hover:bg-gray-700">Ver los usuarios</a>
                         </li>
                     </ul>
                 </li>

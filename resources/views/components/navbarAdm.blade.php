@@ -14,12 +14,12 @@
     <div>
         <nav class="bg-white border-b border-gray-200 shadow">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-                <a href="/adm/dashboard" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="{{route('admin.index')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{ asset('img/logoTeapa.png') }}" class="h-8" alt="Logo de Teapa" />
                     <span class="text-xl font-semibold text-gray-800">Teapa Tabasco</span>
                 </a>
                 <div class="hidden md:flex md:space-x-8">
-                    <a href="/adm/dashboard"
+                    <a href="{{route('admin.index')}}"
                         class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Inicio</a>
                 </div>
 
