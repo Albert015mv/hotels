@@ -64,6 +64,7 @@ Route::middleware('auth.admin')->group(function () {
     Route::post('/users/store', [AdminController::class, 'store'])->name('user.store');
     Route::delete('/users/destroy/{id}', [AdminController::class, 'destroy'])->name('user.destroy');
 });
+
 //Rutas del administrador del hotel
 Route::middleware('auth.adminHotel')->group(function () {
     Route::get('reservations', [adminHotelsController::class, 'destroy'])->name('reservations.delete');

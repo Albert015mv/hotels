@@ -22,7 +22,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Tarjeta 1: Hoteles -->
-                <a href="/catalogoHoteles" class="block">
+                <a href="catalogoHoteles" class="block">
                     <div
                         class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105 opacity-0 translate-y-20 transition-opacity duration-500">
                         <img class="w-full h-48 object-cover rounded-md mb-4" src="{{ asset('img/hoteles.jfif') }}"

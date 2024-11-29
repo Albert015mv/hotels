@@ -4,7 +4,7 @@
             <!-- Sección principal -->
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                    <img src="{{ asset('img/logoTeapa.png') }}" class="w-32 h-32 rounded-full p-2" alt="Logo Teapa Tabasco">
+                    <img src="{{ asset('img/logoTeapa.png') }}" class="w-45 h-32 rounded-full p-2" alt="Logo Teapa Tabasco">
                     <span class="ml-3 text-xl font-semibold">Teapa Tabasco</span>
                 </a>
                 <p class="mt-3 text-sm text-gray-500">Conoce más sobre el pueblo mágico</p>
@@ -47,26 +47,22 @@
                 <!-- Creadores -->
                 <div class="lg:w-1/2 md:w-full w-full px-4">
                     <h2 class="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CREADORES</h2>
-                    <div class="flex flex-wrap justify-start space-x-8">
+                    <div class="flex flex-wrap justify-start items-center space-x-6">
                         <div class="text-center">
-                            <img src="{{ asset('img/creator1.jpg') }}" class="w-20 h-20 rounded-full mx-auto" alt="Creador 1">
-                            <p class="mt-2 text-gray-700 font-medium">Nombre 1</p>
-                            <p class="text-sm text-gray-500">Rol 1</p>
+                            <img src="{{ asset('img/isabel.jfif') }}" class="w-16 h-16 rounded-full mx-auto" alt="Isabel">
+                            <p class="text-sm text-gray-500 mt-2">Isabel</p>
                         </div>
                         <div class="text-center">
-                            <img src="{{ asset('img/creator2.jpg') }}" class="w-20 h-20 rounded-full mx-auto" alt="Creador 2">
-                            <p class="mt-2 text-gray-700 font-medium">Nombre 2</p>
-                            <p class="text-sm text-gray-500">Rol 2</p>
+                            <img src="{{ asset('img/jose.jfif') }}" class="w-16 h-16 rounded-full mx-auto" alt="José">
+                            <p class="text-sm text-gray-500 mt-2">José</p>
                         </div>
                         <div class="text-center">
-                            <img src="{{ asset('img/creator3.jpg') }}" class="w-20 h-20 rounded-full mx-auto" alt="Creador 3">
-                            <p class="mt-2 text-gray-700 font-medium">Nombre 3</p>
-                            <p class="text-sm text-gray-500">Rol 3</p>
+                            <img src="{{ asset('img/enrique.jfif') }}" class="w-16 h-16 rounded-full mx-auto" alt="Enrique">
+                            <p class="text-sm text-gray-500 mt-2">Enrique</p>
                         </div>
                         <div class="text-center">
-                            <img src="{{ asset('img/creator4.jpg') }}" class="w-20 h-20 rounded-full mx-auto" alt="Creador 4">
-                            <p class="mt-2 text-gray-700 font-medium">Nombre 4</p>
-                            <p class="text-sm text-gray-500">Rol 4</p>
+                            <img src="{{ asset('img/miguel.jfif') }}" class="w-16 h-16 rounded-full mx-auto" alt="Miguel">
+                            <p class="text-sm text-gray-500 mt-2">Miguel</p>
                         </div>
                     </div>
                 </div>
