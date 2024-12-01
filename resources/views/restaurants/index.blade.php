@@ -21,7 +21,7 @@
             <div
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="La Tiendita" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/tiendita.jpg">
+                    src="{{ asset('/img/tiendita.jpg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">La Tiendita</h1>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <img alt="Café Anturio" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-r-lg"
-                    src="/img/cafe.jpg">
+                    src="{{ asset('/img/cafe.jpg')}}">
             </div>
 
             <!-- Card "Ciber Café Rosales" -->
@@ -64,7 +64,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ciber Café Rosales"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/jacalito.jpeg">
+                    src="{{ asset('/img/jacalito.jpeg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Jacalito</h1>
@@ -107,7 +107,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ciber Café Rosales"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/pulpo.jpg">
+                    src="{{ asset('/img/pulpo.jpg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">El Gran Pulpo</h1>

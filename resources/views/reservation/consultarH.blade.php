@@ -7,15 +7,6 @@
             <!-- Título principal -->
             <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Tus Reservaciones</h1>
 
-            <!-- Sección de resumen -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div class="bg-blue-600 text-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-xl font-bold">Total de Reservaciones</h2>
-                    <p class="text-3xl mt-2 font-semibold">{{ $reservations->count() }}</p>
-                </div>
-                
-            </div>
-
             <!-- Tabla de Reservaciones -->
             <div 
                 class="overflow-x-auto shadow-lg rounded-lg w-full mt-6 bg-cover bg-center"
@@ -40,7 +31,7 @@
                     <tbody class="divide-y divide-gray-300">
                         @foreach ($reservations as $reserva)
                             <tr class="hover:bg-gray-100 transition-all duration-200">
-                                <td class="px-6 py-4 text-sm text-gray-800">{{ $reserva->hotel_id }}</td>
+                                <td class="px-6 py-4 text-sm text-gray-800"> {{ $reserva->hotel->name ?? 'Sin nombre' }}</td>
                                 <td class="px-6 py-4 text-sm text-gray-800">{{ $reserva->name }}</td>
                                 <td class="px-6 py-4 text-sm text-gray-800">{{ $reserva->paternal_surname }}</td>
                                 <td class="px-6 py-4 text-sm text-gray-800">{{ $reserva->maternal_surname }}</td>

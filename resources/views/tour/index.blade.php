@@ -22,7 +22,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Grutas de Coconá"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/grutas.jfif">
+                    src="{{ asset('img/grutas.jfif')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Grutas de Coconá</h1>
@@ -51,7 +51,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="centro de Teapa"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/centro-teapa.jpg">
+                    src="{{ asset('/img/centro-teapa.jpg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Centro de Teapa</h1>
@@ -80,7 +80,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Parque Miguel Hidalgo"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/parque-mi.jfif">
+                    src="{{ asset('img/parque-mi.jfif')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Parque Miguel Hidalgo</h1>
@@ -108,7 +108,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ilgesia de teapa"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/parque-mi.jfif">
+                    src="{{ asset('img/parque-mi.jfif')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Iglesia de teapa</h1>
@@ -137,7 +137,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ilgesia de teapa"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/estacion.jpeg">
+                    src="{{ asset('img/estacion.jpeg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Estacion del ferroviaria</h1>
@@ -166,7 +166,7 @@
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="Ilgesia de teapa"
                     class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/rios-puya.jpg">
+                    src="{{ asset('/img/rios-puya.jpg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Rio Puyacatengo</h1>

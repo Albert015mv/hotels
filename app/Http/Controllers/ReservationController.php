@@ -107,8 +107,8 @@ class ReservationController extends Controller
     }
     public function Consultar()
     {
-        $reservations = Reservations::all(); // Cambia $Reservations a $reservations para ser consistente
-        return view('reservation/consultarH', compact('reservations'));
+        $reservations = Auth::user()->reservations()->with('hotel')->get(); // Carga la relación 'hotel'
+        return view('reservation.consultarH', compact('reservations'));
     }
     public function index()
     {

@@ -66,8 +66,6 @@
                     </div>
                 </a>
             </div><br>
-            <div class="bg-blue-500 w-[1280px] h-[100px]">
-            </div>
 
             <section class="text-white bg-gray-900 bg-repeat"
                 style="background-image: url('{{ asset('img/seccion2.jfif') }}'); background-size: 200px;">
@@ -83,8 +81,6 @@
                     </div>
                 </div>
             </section>
-
-            <div class="bg-blue-500 w-[1280px] h-[100px]">
             </div>
         </div>
     </section>

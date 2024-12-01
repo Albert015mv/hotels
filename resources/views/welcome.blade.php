@@ -57,7 +57,7 @@
                         plataforma fácil de usar.</p>
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="{{ asset('zona.png') }}" alt="Imagen de Teapa"
+                    <img src="{{ asset('zona.jpg') }}" alt="Imagen de Teapa"
                         class="rounded-lg shadow-lg hover:scale-105 transition-all duration-300">
                 </div>
             </div>

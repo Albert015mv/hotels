@@ -15,6 +15,7 @@ class hotels extends Model
 
     public function reservations()
     {
-        return $this->hasMany(Reservations::class); // Relación con las reservaciones
+        return $this->hasMany(Reservations::class, 'hotel_id', 'id');
     }
+    
 }

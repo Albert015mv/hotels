@@ -3,7 +3,7 @@
 
     <!-- Imagen Principal con animación y filtro de color -->
     <div class="relative w-full h-[500px] overflow-hidden">
-        <img src="{{ asset('/img/balnearios.png') }}" alt=""
+        <img src="{{ asset('img/balnearios.png') }}" alt=""
             class="object-cover w-full h-full brightness-50 saturate-125 transition-transform duration-1000 ease-in-out transform hover:scale-105">
         <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4">
             <h1 class="text-white text-7xl font-extrabold drop-shadow-lg tracking-wider animate-fadeInUp">Balnearios
@@ -21,7 +21,7 @@
             <div
                 class="lg:w-4/5 mx-auto flex flex-wrap items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <img alt="La Tiendita" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-l-lg"
-                    src="/img/garzas.jpg">
+                    src="{{ asset('img/garzas.jpg')}}">
                 <div class="lg:w-1/2 w-full p-8">
                     <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">Teapa, Tabasco</h2>
                     <h1 class="text-gray-900 text-4xl font-bold mb-4">Balneario Las Garzas</h1>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <img alt="Café Anturio" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-r-lg"
-                    src="/img/hacienda.jfif">
+                    src="{{ asset('img/hacienda.jfif')}}">
             </div>
 
             <!-- Card "Café Anturio" -->
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <img alt="Café Anturio" class="lg:w-1/2 w-full h-64 lg:h-auto object-cover object-center rounded-r-lg"
-                    src="/img/hacienda.jfif">
+                    src="{{ asset('/img/hacienda.jfif')}}">
             </div>
         </div>
     </section>
